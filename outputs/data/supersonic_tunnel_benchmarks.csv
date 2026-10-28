@@ -1,0 +1,4 @@
+Mach,Area_Ratio_A_Astar,Throat_Area_m2,Throat_Diam_cm,Mass_Flow_Init_kg_s,Static_Temp_K,Static_Press_kPa,Velocity_m_s,Unit_Re_million_per_m,P0_Start_bar,P0_Min_Run_bar,Runtime_Adiabatic_s,Runtime_Isothermal_s,Runtime_Regulated_s
+2.0,1.6875,0.023704,17.37,110.62,166.67,255.61,517.6,244.25,1.82,1.65,4.49,5.23,18.92
+3.0,4.2346,0.009446,10.97,44.08,107.14,54.45,622.5,148.27,3.99,3.63,7.27,8.99,18.04
+5.0,25.0,0.0016,4.51,7.47,50.0,3.78,708.8,58.09,21.25,19.32,0.78,1.08,0.0
