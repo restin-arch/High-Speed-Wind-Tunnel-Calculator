@@ -2,9 +2,9 @@
 ## Supersonic & Hypersonic Wind Tunnel Design & Runtime Calculator (Python / MATLAB)
 
 **Course / Subject:** Wind Tunnel Techniques  
-**Syllabus Modules Covered:** 
-- **Module 2:** Supersonic Wind Tunnel Design, Nozzle Sizing & Blow-Down Runtime
-- **Module 3:** Hypersonic Shock Tube, Diaphragm Pressure Ratio & Usable Testing Window
+**Core Aerodynamic Domains Covered:** 
+- **Supersonic Wind Tunnel:** Nozzle Sizing, Flow Aerodynamics & Blow-Down Runtime Analysis
+- **Hypersonic Shock Tube:** Diaphragm Pressure Ratio, Multi-State Thermodynamics & Usable Testing Window
 **Date:** October 2026  
 **Status:** Completed & Validated
 
@@ -14,8 +14,8 @@
 
 High-speed ground testing facilities (supersonic wind tunnels and hypersonic shock tubes) operate on transient fluid dynamic principles requiring precise aerodynamic sizing and runtime predictions. This project presents an automated, dual-interface computational toolkit developed in Python that models:
 
-1. **Supersonic Blow-Down Wind Tunnels (Module 2):** Automating convergent-divergent nozzle throat sizing ($A^*$), test-section flow states ($P, T, \rho, u, q, Re/m$), tunnel starting and unchoking pressure limits, and reservoir blow-down pressure decay $P_0(t)$ across adiabatic, isothermal, and regulated regimes.
-2. **Hypersonic Shock Tubes (Module 3):** Solving the non-linear diaphragm pressure ratio equation ($P_4/P_1$), complete thermodynamic state mapping (States 1 through 5), wave propagation speeds ($W_s, u_2, W_R, a_4, u_3-a_3$), driver-to-driven section sizing optimization, and exact usable testing window ($\Delta t_{test}$) prediction before wave interference.
+1. **Supersonic Blow-Down Wind Tunnels:** Automating convergent-divergent nozzle throat sizing ($A^*$), test-section flow states ($P, T, \rho, u, q, Re/m$), tunnel starting and unchoking pressure limits, and reservoir blow-down pressure decay $P_0(t)$ across adiabatic, isothermal, and regulated regimes.
+2. **Hypersonic Shock Tubes:** Solving the non-linear diaphragm pressure ratio equation ($P_4/P_1$), complete thermodynamic state mapping (States 1 through 5), wave propagation speeds ($W_s, u_2, W_R, a_4, u_3-a_3$), driver-to-driven section sizing optimization, and exact usable testing window ($\Delta t_{test}$) prediction before wave interference.
 3. **Multi-Platform User Interfaces:** Featuring both a lightweight, zero-dependency **Desktop GUI (Tkinter + Matplotlib)** and a modern **Reactive Web Dashboard (Streamlit)**, alongside a fully scriptable **Command-Line Interface (CLI)**.
 4. **Benchmark Suite ($M = 2.0, 3.0, 5.0$):** Validated against standard compressible flow theory (NACA Report 1135 and Anderson's *Modern Compressible Flow*).
 
@@ -23,7 +23,7 @@ High-speed ground testing facilities (supersonic wind tunnels and hypersonic sho
 
 ## 2. Theoretical Framework & Governing Equations
 
-### 2.1 Module 2: Supersonic Blow-Down Wind Tunnel
+### 2.1 Supersonic Blow-Down Wind Tunnel
 
 #### 2.1.1 1D Compressible Isentropic Flow & Nozzle Sizing
 For steady, 1D isentropic flow of a calorically perfect gas with specific heat ratio $\gamma$:
@@ -84,7 +84,7 @@ $$\frac{dm}{dt} = -\dot{m}(t)$$
 
 ---
 
-### 2.2 Module 3: Hypersonic Shock Tube
+### 2.2 Hypersonic Shock Tube
 
 #### 2.2.1 Fundamental Diaphragm Pressure Ratio Equation
 A classic shock tube consists of a high-pressure driver section (State 4) and a low-pressure driven section (State 1) separated by a diaphragm at $x = 0$. Upon rupture, an incident shock wave propagates into the driven gas at Mach number $M_s$, while an unsteady expansion fan propagates back into the driver gas.
@@ -282,4 +282,4 @@ Wind Tunnel Technique/
 
 ## 7. Conclusion
 
-The developed toolkit successfully unites the theoretical foundations of **Module 2 (Supersonic Wind Tunnel)** and **Module 3 (Hypersonic Shock Tube)** into a verified, automated software package. By combining 1D compressible isentropic relations, normal shock total pressure loss calculations, unsteady tank discharge ODE integration, and Riemann shock tube wave tracking, the software provides aerospace students and test engineers with an intuitive, highly rigorous platform for high-speed facility design and runtime optimization.
+The developed toolkit successfully unites the theoretical foundations of **Supersonic Wind Tunnel Aerodynamics** and **Hypersonic Shock Tube Dynamics** into a verified, automated software package. By combining 1D compressible isentropic relations, normal shock total pressure loss calculations, unsteady tank discharge ODE integration, and Riemann shock tube wave tracking, the software provides aerospace students and test engineers with an intuitive, highly rigorous platform for high-speed facility design and runtime optimization.

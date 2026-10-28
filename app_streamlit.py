@@ -2,9 +2,9 @@
 Streamlit Web Application
 =========================
 Supersonic & Hypersonic Wind Tunnel Design & Runtime Calculator
-Modules:
-  - Module 2: Supersonic Blow-Down Wind Tunnel (Nozzle sizing, flow states, tank decay, runtime)
-  - Module 3: Hypersonic Shock Tube (P4/P1 ratio, states 1-5, x-t wave diagram, usable testing window)
+Features:
+  - Supersonic Blow-Down Wind Tunnel (Nozzle sizing, flow states, tank decay, runtime)
+  - Hypersonic Shock Tube (P4/P1 ratio, states 1-5, x-t wave diagram, usable testing window)
 """
 
 import os
@@ -67,17 +67,17 @@ st.markdown("""
 
 def main():
     st.markdown('<div class="main-header">🚀 High-Speed Wind Tunnel & Shock Tube Calculator</div>', unsafe_allow_html=True)
-    st.markdown('<div class="sub-header">Automated Nozzle Sizing, Blow-Down Runtime & Hypersonic Shock Wave Dynamics (Modules 2 & 3)</div>', unsafe_allow_html=True)
+    st.markdown('<div class="sub-header">Automated Nozzle Sizing, Blow-Down Runtime & Hypersonic Shock Wave Dynamics</div>', unsafe_allow_html=True)
 
     # Sidebar controls
     st.sidebar.image("https://img.icons8.com/fluency/96/wind-turbine.png", width=64)
     st.sidebar.title("Configuration")
 
-    module_choice = st.sidebar.radio(
-        "Select Module:",
+    mode_choice = st.sidebar.radio(
+        "Select Analysis Mode:",
         [
-            "Module 2: Supersonic Blow-Down Tunnel",
-            "Module 3: Hypersonic Shock Tube",
+            "Supersonic Blow-Down Tunnel",
+            "Hypersonic Shock Tube",
             "Benchmark Comparison (M = 2, 3, 5)"
         ]
     )
@@ -91,19 +91,19 @@ def main():
     - 1D Riemann Shock Tube Dynamics
     """)
 
-    if module_choice == "Module 2: Supersonic Blow-Down Tunnel":
+    if mode_choice == "Supersonic Blow-Down Tunnel":
         render_supersonic_module()
-    elif module_choice == "Module 3: Hypersonic Shock Tube":
+    elif mode_choice == "Hypersonic Shock Tube":
         render_shock_tube_module()
     else:
         render_benchmarks_module()
 
 
 # ==============================================================================
-# MODULE 2: SUPERSONIC BLOW-DOWN WIND TUNNEL
+# SUPERSONIC BLOW-DOWN WIND TUNNEL
 # ==============================================================================
 def render_supersonic_module():
-    st.subheader("💨 Module 2: Supersonic Blow-Down Wind Tunnel")
+    st.subheader("💨 Supersonic Blow-Down Wind Tunnel")
     st.caption("Calculates choked nozzle throat sizing, 1D flow states, starting/running pressure thresholds, and storage tank pressure decay runtime.")
 
     col_in, col_view = st.columns([1, 2], gap="large")
@@ -247,10 +247,10 @@ def render_supersonic_module():
 
 
 # ==============================================================================
-# MODULE 3: HYPERSONIC SHOCK TUBE
+# HYPERSONIC SHOCK TUBE
 # ==============================================================================
 def render_shock_tube_module():
-    st.subheader("⚡ Module 3: Hypersonic Shock Tube / Runtime Calculator")
+    st.subheader("⚡ Hypersonic Shock Tube / Runtime Calculator")
     st.caption("Solves the fundamental 1D shock tube relation, intermediate states 1-5, wave kinematics, and usable testing window duration.")
 
     col_in, col_view = st.columns([1, 2], gap="large")

@@ -31,13 +31,13 @@ def print_banner():
     print("""
 ========================================================================
    SUPERSONIC & HYPERSONIC WIND TUNNEL DESIGN & RUNTIME CALCULATOR
-                  Modules 2 & 3 Aerodynamics Suite
+                 High-Speed Aerodynamics Suite
 ========================================================================
     """)
 
 
 def handle_supersonic(args):
-    print("\n--- Supersonic Blow-Down Wind Tunnel (Module 2) ---")
+    print("\n--- Supersonic Blow-Down Wind Tunnel ---")
     res = calculate_supersonic_tunnel(
         mach=args.mach,
         test_area=args.area,
@@ -71,7 +71,7 @@ def handle_supersonic(args):
 
 
 def handle_shocktube(args):
-    print("\n--- Hypersonic Shock Tube / Runtime Calculator (Module 3) ---")
+    print("\n--- Hypersonic Shock Tube / Runtime Calculator ---")
     sh = calculate_shock_tube(
         shock_mach=args.mach,
         driver_gas=args.driver,
@@ -107,8 +107,8 @@ def handle_shocktube(args):
 def interactive_mode():
     print_banner()
     print("Select an option:")
-    print("  1. Supersonic Blow-Down Wind Tunnel (Module 2)")
-    print("  2. Hypersonic Shock Tube / Runtime Calculator (Module 3)")
+    print("  1. Supersonic Blow-Down Wind Tunnel")
+    print("  2. Hypersonic Shock Tube / Runtime Calculator")
     print("  3. Run Day 4 Benchmark Cases (M = 2.0, 3.0, 5.0)")
     print("  4. Launch Desktop GUI (Tkinter)")
     print("  5. Launch Web GUI (Streamlit)")
@@ -167,7 +167,7 @@ def main():
     subparsers = parser.add_subparsers(dest="command")
 
     # Supersonic parser
-    sp_super = subparsers.add_parser("supersonic", help="Supersonic Blow-Down Wind Tunnel Module")
+    sp_super = subparsers.add_parser("supersonic", help="Supersonic Blow-Down Wind Tunnel Calculator")
     sp_super.add_argument("--mach", type=float, default=2.5, help="Test section Mach number (default 2.5)")
     sp_super.add_argument("--area", type=float, default=0.04, help="Test section area in m^2 (default 0.04)")
     sp_super.add_argument("--p0", type=float, default=20.0, help="Storage tank pressure in bar (default 20.0)")
@@ -177,7 +177,7 @@ def main():
     sp_super.add_argument("--gas", type=str, default="Air", help="Gas name (default Air)")
 
     # Shock tube parser
-    sp_shock = subparsers.add_parser("shocktube", help="Hypersonic Shock Tube Module")
+    sp_shock = subparsers.add_parser("shocktube", help="Hypersonic Shock Tube Calculator")
     sp_shock.add_argument("--mach", type=float, default=3.0, help="Target incident shock Mach number (default 3.0)")
     sp_shock.add_argument("--driver", type=str, default="He", help="Driver gas name (default He)")
     sp_shock.add_argument("--driven", type=str, default="Air", help="Driven gas name (default Air)")

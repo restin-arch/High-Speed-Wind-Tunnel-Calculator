@@ -7,9 +7,9 @@
 
 A complete aerodynamic design, sizing, and runtime estimation software package for high-speed wind tunnels and shock tubes.
 
-Developed for **Wind Tunnel Techniques** course curriculum:
-- **Module 2:** Supersonic Wind Tunnel Design & Blow-Down Runtime
-- **Module 3:** Hypersonic Shock Tube / Runtime Calculations
+Core Aerodynamic Capabilities:
+- **Supersonic Wind Tunnel:** Nozzle Sizing, Flow Properties & Storage Tank Blow-Down Runtime
+- **Hypersonic Shock Tube:** Diaphragm Pressure Ratio, States 1–5 Thermodynamics & Testing Window
 
 ---
 

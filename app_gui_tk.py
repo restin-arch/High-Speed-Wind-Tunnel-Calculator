@@ -2,9 +2,9 @@
 Tkinter Native Desktop GUI Application
 ======================================
 Supersonic & Hypersonic Wind Tunnel Design & Runtime Calculator
-Modules:
-  - Module 2: Supersonic Blow-Down Wind Tunnel (Nozzle sizing, flow states, tank decay, runtime)
-  - Module 3: Hypersonic Shock Tube (P4/P1 ratio, states 1-5, x-t wave diagram, usable testing window)
+Features:
+  - Supersonic Blow-Down Wind Tunnel (Nozzle sizing, flow states, tank decay, runtime)
+  - Hypersonic Shock Tube (P4/P1 ratio, states 1-5, x-t wave diagram, usable testing window)
 """
 
 import sys
@@ -59,12 +59,12 @@ class WindTunnelApp(tk.Tk):
 
         # Tab 1: Supersonic Wind Tunnel
         self.tab_supersonic = ttk.Frame(self.notebook)
-        self.notebook.add(self.tab_supersonic, text="  Supersonic Blow-Down Tunnel (Module 2)  ")
+        self.notebook.add(self.tab_supersonic, text="  Supersonic Blow-Down Tunnel  ")
         self.build_supersonic_tab()
 
         # Tab 2: Hypersonic Shock Tube
         self.tab_shocktube = ttk.Frame(self.notebook)
-        self.notebook.add(self.tab_shocktube, text="  Hypersonic Shock Tube (Module 3)  ")
+        self.notebook.add(self.tab_shocktube, text="  Hypersonic Shock Tube  ")
         self.build_shocktube_tab()
 
         # Initial trigger
@@ -228,7 +228,7 @@ class WindTunnelApp(tk.Tk):
         left_frame = ttk.Frame(main_pane, padding=10)
         main_pane.add(left_frame, weight=1)
 
-        ttk.Label(left_frame, text="Hypersonic Shock Tube Module", style="Header.TLabel").pack(anchor="w")
+        ttk.Label(left_frame, text="Hypersonic Shock Tube Analysis", style="Header.TLabel").pack(anchor="w")
         ttk.Label(left_frame, text="Pressure Ratio Sizing, Wave Kinematics & Testing Window", style="SubHeader.TLabel").pack(anchor="w", pady=(0, 10))
 
         in_group = ttk.LabelFrame(left_frame, text="Shock Tube Parameters", padding=10)
