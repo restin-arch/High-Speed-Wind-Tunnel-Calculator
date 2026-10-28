@@ -1,5 +1,6 @@
 # Supersonic & Hypersonic Wind Tunnel Design & Runtime Calculator
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/restin-arch/High-Speed-Wind-Tunnel-Calculator/blob/main/Wind_Tunnel_Calculator_Colab.ipynb)
 [![Python 3.12](https://img.shields.io/badge/Python-3.12-blue.svg)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Streamlit](https://img.shields.io/badge/Streamlit-1.66-brightgreen.svg)](https://streamlit.io/)
