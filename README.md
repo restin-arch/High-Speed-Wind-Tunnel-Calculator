@@ -15,14 +15,14 @@ Developed for **Wind Tunnel Techniques** course curriculum:
 
 ## 🌟 Key Features
 
-### 💨 Module 2: Supersonic Blow-Down Wind Tunnel
+### 💨 Supersonic Blow-Down Wind Tunnel
 - **Nozzle Sizing:** Inverts 1D Compressible Area-Mach relation to calculate exact choked throat area $A^*$, circular/planar dimensions, and contraction ratio.
 - **Test-Section Flow Properties:** Calculates static pressure $P$, temperature $T$, density $\rho$, velocity $u$, dynamic pressure $q$, Sutherland viscosity $\mu(T)$, and unit Reynolds number $Re/m$.
 - **Starting & Running Limits:** Computes normal shock total pressure ratio ($P_{02}/P_{01}$), starting pressure threshold ($P_{0,start}$), and minimum operating running pressure ($P_{0,min\_run}$) with diffuser efficiency.
 - **Blow-Down Runtime Decay:** Models unsteady reservoir blow-down under adiabatic (isentropic), isothermal, and regulated pressure regimes.
 - **Nozzle Aerodynamic Contour:** Computes convergent-divergent nozzle geometry with Prandtl-Meyer expansion angle limits and solves axial distributions $M(x/L)$, $P(x/L)/P_0$, and $T(x/L)/T_0$.
 
-### ⚡ Module 3: Hypersonic Shock Tube
+### ⚡ Hypersonic Shock Tube
 - **Diaphragm Pressure Ratio ($P_4/P_1$):** Solves the non-linear 1D Riemann shock tube relation for target shock Mach number $M_s$.
 - **Multi-Gas Support:** Helium ($\text{He}$), Nitrogen ($\text{N}_2$), Hydrogen ($\text{H}_2$), and Air with full thermodynamic properties.
 - **Complete State Mapping (States 1–5):** Calculates pre-shock, post-shock, contact surface, driver expansion, and end-wall reflected shock conditions.
